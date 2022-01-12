@@ -62,6 +62,7 @@ export default class F1 extends Component {
                                 <Form.Group as={Col} md="4" controlId="validationFormik02">
                                     <Form.Label>Last name</Form.Label>
                                     <Form.Control
+
                                         type="text"
                                         name="lastName"
                                         placeholder="lastName"
