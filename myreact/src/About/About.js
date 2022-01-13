@@ -2,7 +2,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, FormControl, Nav, Navbar, Button, Form } from 'react-bootstrap'
 import React, { Component } from 'react'
 import logo from './logo192.png'
-import F1 from './F1';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from '../Pages/Home';
+import Slide from '../Pages/Slide';
+import Blog from '../Pages/Blog';
+import Forms from '../Pages/Forms'
+
 
 export default class About extends Component {
     render() {
@@ -24,7 +29,7 @@ export default class About extends Component {
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="mr-avto">
                                     <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/about">About</Nav.Link>
+                                    <Nav.Link href="/slide">Slide</Nav.Link>
                                     <Nav.Link href="/forms">Fopms</Nav.Link>
                                     <Nav.Link href="/blog">Blog</Nav.Link>
 
@@ -40,7 +45,15 @@ export default class About extends Component {
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-                    <F1 />
+                    <Router>
+                        <Routes>
+                            <Route exact path="/" element={<Home />} />
+                            <Route exact path="/slide" element={<Slide />} />
+                            <Route exact path="/forms" element={<Forms />} />
+                            <Route exact path="/blog" element={<Blog />} />
+                        </Routes>
+
+                    </Router>
                 </div>
             </>
         )

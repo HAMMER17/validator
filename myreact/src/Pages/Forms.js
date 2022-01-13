@@ -56,7 +56,8 @@ export default class F1 extends Component {
                                     />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                     <Form.Control.Feedback type="invalid">
-                                        {errors.firstName}
+                                        ошибка ввода имени
+                                        {/* {errors.firstName} */}
                                     </Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group as={Col} md="4" controlId="validationFormik02">
@@ -74,7 +75,8 @@ export default class F1 extends Component {
 
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                     <Form.Control.Feedback type="invalid">
-                                        {errors.lastName}
+                                        ошибка ввода имени
+                                        {/* {errors.lastName} */}
                                     </Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group as={Col} md="4" controlId="validationFormikUsername">
