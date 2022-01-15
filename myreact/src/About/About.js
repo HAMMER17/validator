@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, FormControl, Nav, Navbar, Button, Form } from 'react-bootstrap'
 import React, { Component } from 'react'
-import logo from './logo192.png'
+import logo from './logo.png'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../Pages/Home';
 import Slide from '../Pages/Slide';
@@ -20,9 +20,9 @@ export default class About extends Component {
                                 <img src={logo}
                                     width={50}
                                     height={50}
-                                    className="d-inline-block align-top"
+                                    className="d-inline-block align-top logos"
                                     alt="logo"
-                                    className="logos" />
+                                />
 
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -34,15 +34,16 @@ export default class About extends Component {
                                     <Nav.Link href="/blog">Blog</Nav.Link>
 
                                 </Nav>
-                                <Form className="d-flex">
-                                    <FormControl
-                                        type="text"
-                                        placeholder="Search"
-                                        className="d-inline mx-2"
-                                    />
-                                    <Button variant="outline-info">Search</Button>
-                                </Form>
                             </Navbar.Collapse>
+                            <Form className="d-flex">
+                                <FormControl
+                                    type="text"
+                                    placeholder="Search"
+                                    className="d-inline mx-2"
+                                />
+                                <Button variant="outline-info">Search</Button>
+                            </Form>
+
                         </Container>
                     </Navbar>
                     <Router>
