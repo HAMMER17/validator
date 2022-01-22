@@ -35,10 +35,10 @@ export default class F1 extends Component {
                     {({
                         handleSubmit,
                         handleChange,
-                        handleBlur,
+                        // handleBlur,
                         values,
                         touched,
-                        isValid,
+                        // isValid,
                         errors,
                     }) => (
                         <Form noValidate onSubmit={handleSubmit}>

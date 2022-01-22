@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, FormControl, Nav, Navbar, Button, Form } from 'react-bootstrap'
 import React, { Component } from 'react'
-import logo from './logo.png'
+import logo from './logo2.png'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../Pages/Home';
 import Slide from '../Pages/Slide';
@@ -27,7 +27,7 @@ export default class About extends Component {
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
-                                <Nav className="mr-avto">
+                                <Nav className="mr-avto h1">
                                     <Nav.Link href="/">Home</Nav.Link>
                                     <Nav.Link href="/slide">Slide</Nav.Link>
                                     <Nav.Link href="/forms">Fopms</Nav.Link>

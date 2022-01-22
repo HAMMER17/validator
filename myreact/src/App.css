@@ -46,3 +46,25 @@ body{
   border-radius: 10px;
   
 }
+.h1{
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.imgs{
+  margin: 5px;
+  
+}
+.a {
+  height: 600px;
+  border-radius: 10px;
+}
+.b {
+  margin: 15px;
+}
+.c {
+  margin: 10px;
+  justify-content: first baseline;
+  display: inline-block;
+  border-radius: 10px;
+}
